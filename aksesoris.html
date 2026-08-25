@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Aksesori Sekolah - SchoolFit</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>School</span>Fit
+    </div>
+
+    <nav id="mainNav">
+
+        <a href="index.html">
+            Beranda
+        </a>
+
+        <a href="seragam.html">
+            Seragam
+        </a>
+
+        <a href="aksesoris.html" class="active">
+            Aksesori
+        </a>
+
+        <a href="sepatu.html">
+            Sepatu
+        </a>
+
+        <a href="tas.html">
+            Tas
+        </a>
+
+        <a href="pramuka.html">
+            Pramuka
+        </a>
+
+    </nav>
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+<section class="page-header">
+
+    <p>SCHOOL ACCESSORIES</p>
+
+    <h1>
+        Aksesori Sekolah
+    </h1>
+
+    <span>
+        Pelengkap penampilan agar seragam terlihat lebih lengkap.
+    </span>
+
+</section>
+
+
+<section class="section">
+
+
+    <!-- FILTER -->
+
+    <div class="filter-buttons">
+
+        <button
+            class="filter-btn active"
+            onclick="filterAksesoris('all', this)">
+            Semua
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterAksesoris('sd', this)">
+            SD
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterAksesoris('smp', this)">
+            SMP
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterAksesoris('sma', this)">
+            SMA / SMK
+        </button>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        <!-- ========================= -->
+        <!-- SD -->
+        <!-- ========================= -->
+
+
+        <article class="product-card aksesoris-item sd">
+
+            <img src="images/aksesoris/sd-topi-1.jpg"
+                 alt="Topi sekolah SD">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SD
+                </span>
+
+                <h3>
+                    Topi Sekolah SD
+                </h3>
+
+                <p>
+                    Topi sebagai salah satu pelengkap
+                    seragam sekolah dasar.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card aksesoris-item sd">
+
+            <img src="images/aksesoris/sd-dasi-1.jpg"
+                 alt="Dasi sekolah SD">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SD
+                </span>
+
+                <h3>
+                    Dasi Sekolah SD
+                </h3>
+
+                <p>
+                    Dasi sekolah dasar dengan warna
+                    sesuai aturan sekolah.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card aksesoris-item sd">
+
+            <img src="images/aksesoris/sd-gesper-1.jpg"
+                 alt="Gesper sekolah SD">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SD
+                </span>
+
+                <h3>
+                    Ikat Pinggang / Gesper SD
+                </h3>
+
+                <p>
+                    Aksesori yang membantu membuat
+                    tampilan seragam lebih rapi.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card aksesoris-item sd">
+
+            <img src="images/aksesoris/sd-kaos-kaki-1.jpg"
+                 alt="Kaos kaki sekolah SD">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SD
+                </span>
+
+                <h3>
+                    Kaos Kaki Sekolah SD
+                </h3>
+
+                <p>
+                    Pelengkap seragam yang membantu
+                    menjaga kenyamanan kaki.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ========================= -->
+        <!-- SMP -->
+        <!-- ========================= -->
+
+
+        <article class="product-card aksesoris-item smp">
+
+            <img src="images/aksesoris/smp-topi-1.jpg"
+                 alt="Topi sekolah SMP">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMP
+                </span>
+
+                <h3>
+                    Topi Sekolah SMP
+                </h3>
+
+                <p>
+                    Topi dengan lambang sesuai
+                    jenjang SMP.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card aksesoris-item smp">
+
+            <img src="images/aksesoris/smp-dasi-1.jpg"
+                 alt="Dasi sekolah SMP">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMP
+                </span>
+
+                <h3>
+                    Dasi Sekolah SMP
+                </h3>
+
+                <p>
+                    Desain dasi rapi yang melengkapi
+                    tampilan seragam SMP.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card aksesoris-item smp">
+
+            <img src="images/aksesoris/smp-gesper-1.jpg"
+                 alt="Gesper sekolah SMP">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMP
+                </span>
+
+                <h3>
+                    Ikat Pinggang / Gesper SMP
+                </h3>
+
+                <p>
+                    Gesper dengan lambang jenjang
+                    SMP untuk kelengkapan seragam.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ========================= -->
+        <!-- SMA / SMK -->
+        <!-- ========================= -->
+
+
+        <article class="product-card aksesoris-item sma">
+
+            <img src="images/aksesoris/sma-topi-1.jpg"
+                 alt="Topi sekolah SMA/SMK">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMA / SMK
+                </span>
+
+                <h3>
+                    Topi Sekolah SMA / SMK
+                </h3>
+
+                <p>
+                    Model topi untuk pelajar
+                    tingkat SMA dan SMK.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card aksesoris-item sma">
+
+            <img src="images/aksesoris/sma-dasi-1.jpg"
+                 alt="Dasi sekolah SMA/SMK">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMA / SMK
+                </span>
+
+                <h3>
+                    Dasi Sekolah SMA / SMK
+                </h3>
+
+                <p>
+                    Pilihan dasi untuk pelajar
+                    SMA dan SMK.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card aksesoris-item sma">
+
+            <img src="images/aksesoris/sma-gesper-1.jpg"
+                 alt="Gesper sekolah SMA/SMK">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMA / SMK
+                </span>
+
+                <h3>
+                    Ikat Pinggang / Gesper SMA / SMK
+                </h3>
+
+                <p>
+                    Pilihan model gesper untuk
+                    pelajar SMA dan SMK.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="logo">
+        <span>School</span>Fit
+    </div>
+
+    <p>
+        Blog Fashion Sekolah Indonesia
+    </p>
+
+    <p class="copyright">
+        © 2026 SchoolFit
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

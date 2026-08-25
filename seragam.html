@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Seragam Sekolah - SchoolFit</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>School</span>Fit
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Beranda
+        </a>
+
+        <a href="seragam.html" class="active">
+            Seragam
+        </a>
+
+        <a href="aksesoris.html">
+            Aksesori
+        </a>
+
+        <a href="sepatu.html">
+            Sepatu
+        </a>
+
+        <a href="tas.html">
+            Tas
+        </a>
+
+        <a href="pramuka.html">
+            Pramuka
+        </a>
+
+    </nav>
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- HEADER HALAMAN -->
+
+<section class="page-header">
+
+    <p>SCHOOL UNIFORM</p>
+
+    <h1>
+        Seragam Sekolah
+    </h1>
+
+    <span>
+        Temukan berbagai model seragam berdasarkan jenjang sekolah.
+    </span>
+
+</section>
+
+
+<!-- SERAGAM -->
+
+<section class="section">
+
+
+    <!-- FILTER -->
+
+    <div class="filter-buttons">
+
+        <button
+            class="filter-btn active"
+            onclick="filterSeragam('all', this)">
+            Semua
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterSeragam('sd', this)">
+            SD
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterSeragam('smp', this)">
+            SMP
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterSeragam('sma', this)">
+            SMA / SMK
+        </button>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        <!-- ========================= -->
+        <!-- SD -->
+        <!-- ========================= -->
+
+
+        <article class="product-card seragam-item sd">
+
+            <img
+                src="images/seragam/sd-1.jpg"
+                alt="Seragam SD PUTRI">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SD
+                </span>
+
+                <h3>
+                    Seragam SD PUTRA
+                </h3>
+
+                <p>
+                    Seragam sekolah dasar
+                    dengan tampilan rapi dan nyaman.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card seragam-item sd">
+
+            <img
+                src="images/seragam/sd-2.jpg"
+                alt="Seragam SD PUTRI">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SD
+                </span>
+
+                <h3>
+                    Seragam SD PUTRI
+                </h3>
+
+                <p>
+                    Inspirasi seragam untuk
+                    pelajar sekolah dasar.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ========================= -->
+        <!-- SMP -->
+        <!-- ========================= -->
+
+
+        <article class="product-card seragam-item smp">
+
+            <img
+                src="images/seragam/smp-1.jpg"
+                alt="Seragam SMP PUTRA">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMP
+                </span>
+
+                <h3>
+                    Seragam SMP PUTRA
+                </h3>
+
+                <p>
+                    Seragam sekolah untuk
+                    pelajar tingkat SMP.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card seragam-item smp">
+
+            <img
+                src="images/seragam/smp-2.jpg"
+                alt="Seragam SMP PUTRI">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMP
+                </span>
+
+                <h3>
+                    Seragam SMP PUTRI
+                </h3>
+
+                <p>
+                    Pilihan seragam SMP dengan
+                    tampilan yang rapi.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ========================= -->
+        <!-- SMA / SMK -->
+        <!-- ========================= -->
+
+
+        <article class="product-card seragam-item sma">
+
+            <img
+                src="images/seragam/sma-1.jpg"
+                alt="Seragam SMA/SMK PUTRA">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMA / SMK
+                </span>
+
+                <h3>
+                    Seragam SMA / SMK PUTRA
+                </h3>
+
+                <p>
+                    Inspirasi seragam untuk
+                    pelajar SMA dan SMK.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="product-card seragam-item sma">
+
+            <img
+                src="images/seragam/sma-2.jpg"
+                alt="Seragam SMA/SMK PUTRI">
+
+            <div class="product-info">
+
+                <span class="tag">
+                    SMA / SMK
+                </span>
+
+                <h3>
+                    Seragam SMA / SMK PUTRI
+                </h3>
+
+                <p>
+                    Referensi seragam untuk
+                    pelajar tingkat SMA dan SMK.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="logo">
+        <span>School</span>Fit
+    </div>
+
+    <p>
+        Blog Fashion Sekolah Indonesia
+    </p>
+
+    <p class="copyright">
+        © 2026 SchoolFit
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
