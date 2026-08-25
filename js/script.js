@@ -420,3 +420,58 @@ function filterAksesoris(kategori, tombol) {
     }
 
 }
+
+
+
+// ==================================================
+// FILTER SERAGAM (SD / SMP / SMA / SMK)
+// ==================================================
+
+function filterSeragam(kategori, tombol) {
+
+
+    // Ambil semua kartu seragam
+
+    const semuaKartu =
+        document.querySelectorAll(".seragam-item");
+
+
+    semuaKartu.forEach(function (kartu) {
+
+        if (
+            kategori === "all" ||
+            kartu.classList.contains(kategori)
+        ) {
+
+            kartu.style.display = "";
+
+        } else {
+
+            kartu.style.display = "none";
+
+        }
+
+    });
+
+
+
+    // Ubah tombol aktif
+
+    const semuaTombol =
+        document.querySelectorAll(".filter-btn");
+
+
+    semuaTombol.forEach(function (btn) {
+
+        btn.classList.remove("active");
+
+    });
+
+
+    if (tombol) {
+
+        tombol.classList.add("active");
+
+    }
+
+}
